@@ -79,7 +79,7 @@ li a {
 
 .hero {
   min-height: 100vh;
-  background: url(images/hero-bg-img.jpg) no-repeat center center/cover;
+  background: url(/src/assets/hero-bg-img.jpg) no-repeat center center/cover;
 }
 
 .hero-details {

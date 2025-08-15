@@ -1,4 +1,5 @@
 import React from "react";
+import smilingIcon from "../assets/smiling-icon.png";
 
 const Header = () => {
   return (
@@ -21,11 +22,7 @@ const Nav = () => {
 const Logo = () => {
   return (
     <h1 className="logo">
-      <img
-        src="../assets/smiling-icon.png"
-        alt="smiling-icon"
-        className="logo-icon"
-      />
+      <img src={smilingIcon} alt="smiling-icon" className="logo-icon" />
     </h1>
   );
 };

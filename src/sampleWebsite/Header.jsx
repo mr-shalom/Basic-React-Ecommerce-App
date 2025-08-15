@@ -19,7 +19,11 @@ const Nav = () => {
 };
 
 const Logo = () => {
-  return <h1 className="logo">Logo</h1>;
+  return (
+    <h1 className="logo">
+      <img src="/src/assets/smiling-icon.png" alt="smiling-icon" className="logo-icon"/>
+    </h1>
+  );
 };
 
 const NavLinks = () => {

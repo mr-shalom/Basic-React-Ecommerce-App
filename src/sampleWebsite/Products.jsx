@@ -52,7 +52,7 @@ function Products() {
   );
 
   return (
-    <section className={error ? "no-products" : "products"}>
+    <section className={error ? "no-products" : "products"} id="products">
       {error ? (
         <p className="error">{error}</p>
       ) : (

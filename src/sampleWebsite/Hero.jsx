@@ -7,6 +7,7 @@ function Hero() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           neque.
         </p>
+        <a href="#"></a>
       </div>
     </section>
   );

@@ -190,7 +190,6 @@ li a {
 }
 
 .card {
-  flex-grow: 1;
   background-color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;

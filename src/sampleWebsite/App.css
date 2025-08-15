@@ -313,6 +313,7 @@ svg {
   .hero-title {
     font-size: 4rem;
     color: #fff;
+    color: red;
     text-align: center;
   }
 

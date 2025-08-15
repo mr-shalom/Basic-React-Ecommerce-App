@@ -178,14 +178,11 @@ li a {
 }
 
 .products-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   justify-items: flex-start;
-  gap: 2rem; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  align-content: center;
+  gap: 2rem;
   padding-bottom: 7rem;
 }
 
@@ -197,7 +194,8 @@ li a {
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem 1rem;
-  max-width: 23rem;
+  max-width: 22rem;
+  width: 100%;
 }
 
 .card:hover {
@@ -327,15 +325,11 @@ svg {
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .hero-description {
-    font-size: 1.45rem;
+    font-size: 1.6rem;
     color: #fff;
   }
-
-  /* .card {
-    max-width: 100%;
-  } */
 }

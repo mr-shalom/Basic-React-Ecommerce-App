@@ -22,7 +22,7 @@ const Logo = () => {
   return (
     <h1 className="logo">
       <img
-        src="/src/assets/smiling-icon.png"
+        src="../assets/smiling-icon.png"
         alt="smiling-icon"
         className="logo-icon"
       />

@@ -197,7 +197,7 @@ li a {
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem 1rem;
-  width: 23rem;
+  max-width: 23rem;
 }
 
 .card:hover {

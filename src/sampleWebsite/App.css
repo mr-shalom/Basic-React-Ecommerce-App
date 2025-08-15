@@ -309,6 +309,18 @@ svg {
   background-color: #1a1a1a;
 }
 
+@media ((min-width: 768px) and (max-width: 999px)) {
+  .hero-title {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
 @media (max-width: 768px) {
   .links {
     display: none;

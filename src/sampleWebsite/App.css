@@ -179,7 +179,7 @@ li a {
 .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  justify-items: center;
+  justify-items: flex-start;
   gap: 2rem;
   padding-bottom: 7rem;
 }

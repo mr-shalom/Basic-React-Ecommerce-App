@@ -21,7 +21,11 @@ const Nav = () => {
 const Logo = () => {
   return (
     <h1 className="logo">
-      <img src="/src/assets/smiling-icon.png" alt="smiling-icon" className="logo-icon"/>
+      <img
+        src="src/assets/smiling-icon.png"
+        alt="smiling-icon"
+        className="logo-icon"
+      />
     </h1>
   );
 };

@@ -309,7 +309,7 @@ svg {
   background-color: #1a1a1a;
 }
 
-@media ((min-width: 768px) and (max-width: 999px)) {
+@media (min-width: 768px) and (max-width: 999px) {
   .hero-title {
     font-size: 4rem;
     color: #fff;

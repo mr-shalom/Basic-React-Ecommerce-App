@@ -1,0 +1,131 @@
+/* 
+:root {
+  --primaryText: #1a1a1a;
+  --heroText: #f4f4f4;
+  --goldColor: #f68b1e;
+  --bgwhite: #fff;
+  --whiteText:#fff;
+  --bgcolor: #f1f1f2;
+  --textcolor: #313133;
+}
+*/
+
+.acctPage {
+  background-color: var(--bgcolor);
+  max-width: 150rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.acctPageMenu {
+  padding: 10rem 0 2rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.acctTab {
+  min-width: 20rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  height: max-content;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1rem 0.5rem;
+  position: relative;
+  min-height: 20rem;
+  max-height: max-content;
+}
+
+.links li {
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 0.5rem;
+}
+
+.active {
+  color: #fff;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--goldColor);
+  height: 100%;
+  width: 100%;
+  border-left: 0.3rem solid #1a1a1a;
+  border-radius: 0.4rem;
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+}
+
+.links li:hover,
+.logoutBtn:hover,
+.links li:hover a {
+  color: #fff;
+  background-color: var(--goldColor);
+  border-radius: 0.4rem;
+}
+
+.tabText {
+  font-size: 1.2rem;
+}
+
+.exit {
+  position: absolute;
+  bottom: 1rem;
+  left: 0.5rem;
+  right: 0.5rem;
+}
+
+.displayTabContents {
+  flex-grow: 1;
+  overflow-x: auto;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.tabIcon {
+  font-size: 1.75rem;
+}
+
+.otherProducts {
+  min-width: 100%;
+}
+
+.recommend {
+  font-size: 1.3rem;
+}
+
+.products {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.otherProducts {
+  max-width: 150rem;
+  margin: 2rem auto;
+}
+
+.prodContainer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: blue;
+}

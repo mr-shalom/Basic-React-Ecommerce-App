@@ -1,0 +1,66 @@
+.formWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  border: 0.1rem solid var(--goldColor);
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  /* box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3); */
+  max-width: 40rem;
+}
+
+.form h1 {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fields fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fields label {
+  font-size: 1rem;
+}
+
+.fields input {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--goldColor);
+}
+
+.submitBtn {
+  display: block;
+  background-color: var(--goldColor);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.newUser {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.createNewAccount {
+  font-weight: 600;
+}

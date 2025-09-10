@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+
+import styles from "./Footer.module.css";
+
 const footerDetails = [
   {
     id: 1,
@@ -31,11 +35,22 @@ const footerDetails = [
     cookie: "Support hub",
     terms: "Preferences ",
   },
+  {
+    id: 4,
+    title: "Company",
+    about: "About us",
+    review: "Reviews",
+    privacy: "Privacy policy",
+    cookie: "Cookie policy",
+    terms: "Terms & conditions",
+    use: "Acceptable use policy",
+    site: "Sitemap",
+  },
 ];
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <FooterSection />
       <CopyRight />
     </footer>
@@ -44,7 +59,7 @@ function Footer() {
 
 function FooterSection() {
   return (
-    <section className="footer-section">
+    <section className={styles.footerSection}>
       {footerDetails.map((data) => (
         <FooterLinks key={data.id} data={data} />
       ))}
@@ -54,32 +69,35 @@ function FooterSection() {
 
 function FooterLinks({ data }) {
   return (
-    <ul className="footer-links">
-      <h1 className="footer-title">{data.title}</h1>
+    <ul className={styles.footerLinks}>
+      <h1 className={styles.footerTitle}>{data.title}</h1>
       {/* prettier-ignore */}
-      <li><a href="#">{data.about}</a></li>
+      <li><Link to="" className={styles.footerLink}>{data.about}</Link></li>
       {/* prettier-ignore */}
-      <li><a href="#">{data.review}</a></li>
+      <li><Link className={styles.footerLink} to="">{data.review}</Link></li>
       {/* prettier-ignore */}
-      <li><a href="#">{data.privacy}</a></li>
+      <li><Link className={styles.footerLink} to="">{data.privacy}</Link></li>
       {/* prettier-ignore */}
-      <li><a href="#">{data.cookie}</a></li>
+      <li><Link className={styles.footerLink} to="">{data.cookie}</Link></li>
       {/* prettier-ignore */}
-      <li><a href="#">{data.terms}</a></li>
+      <li><Link className={styles.footerLink} to="">{data.terms}</Link></li>
       {/* prettier-ignore */}
-      <li><a href="#">{data.use}</a></li>
+      <li><Link className={styles.footerLink} to="">{data.use}</Link></li>
       {/* prettier-ignore */}
-      <li><a href="#">{data.site}</a></li>
+      <li><Link className={styles.footerLink} to="">{data.site}</Link></li>
     </ul>
   );
 }
 
 function CopyRight() {
   return (
-    <div className="footer-description">
-      <p className="copy-right">
-        Developed by Vincent &copy;2025 All rights reserved
-      </p>
+    <div className={styles.grayfooterbg}>
+      <div className={styles.footerDescription}>
+        <p className={styles.copyRight}>
+          Developed by Vincent &copy;{new Date().getFullYear()} All rights
+          reserved
+        </p>
+      </div>
     </div>
   );
 }

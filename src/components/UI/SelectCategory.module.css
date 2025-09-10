@@ -1,0 +1,14 @@
+.sortForm {
+  min-width: 10%;
+}
+
+.select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  /* border: none; */
+  border: 0.1rem solid #1a1a1a;
+  background-color: transparent;
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+}

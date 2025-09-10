@@ -1,0 +1,179 @@
+.productDetailContainer {
+  padding: 13rem 0 3rem;
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.detailContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 0.1rem solid var(--goldColor);
+  border-radius: 0.4rem;
+}
+
+.backBtn {
+  display: block;
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 4rem;
+  padding: 0.1rem;
+  border-radius: 50%;
+  background-color: var(--goldColor);
+  color: #fff;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.35);
+}
+
+.fullProductImg {
+  width: 40%;
+  flex: 1;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImg {
+  max-width: 100%;
+  /* height: auto; */
+  display: block;
+  object-fit: cover;
+}
+
+.fullProductDesc {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  flex: 1;
+  padding: 2rem;
+  flex: 1;
+}
+
+.productTitle {
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.brand {
+  font-size: 1.1rem;
+  background-color: var(--discountbg);
+  color: #1a1a1a;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.desc {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.priceBox {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.currPrice {
+  font-size: 2rem;
+  background-color: gray;
+  font-weight: 800;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  background-color: gray;
+}
+
+.discount {
+  background-color: gray;
+}
+
+.stockStatus {
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.rating {
+  margin: 1rem 0;
+}
+
+.totalRating {
+  color: blue;
+}
+
+.addToCartBtnContainer {
+  margin: 1rem 0 0;
+}
+
+.cartBtn {
+  padding: 1rem 3rem;
+  display: inline-block;
+  color: #fff;
+  background-color: var(--goldColor);
+  cursor: pointer;
+}
+
+.wishlistIcon {
+  font-size: 2rem;
+  margin-right: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.wishlistIcon:hover,
+.wishlistIcon:active,
+.wishlistIcon:focus {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .detailContainer {
+    flex-direction: column;
+  }
+
+  .fullProductImg {
+    width: 100%;
+  }
+}
+/* 
+ const {
+    id: ProdId,
+    title,
+    description,
+    category,
+    price,
+    discountPercentage,
+    rating,
+    stock,
+    tags,
+    sku,
+    weight,
+    dimension,
+    warrantyInformation,
+    shippingInformation,
+    availabilityStatus,
+    reviews,
+    returnPolicy,
+    minimumOrderQuantity,
+    images,
+    thumbnail,
+  } = product;
+
+
+
+*/

@@ -1,0 +1,167 @@
+/* 
+
+
+:root {
+  --primaryText: #1a1a1a;
+  --heroText: #f4f4f4;
+  --goldColor: #f68b1e;
+  --bgwhite: #fff;
+  --bgcolor: #f1f1f2;
+  --textcolor: #313133;
+}
+
+
+
+*/
+
+.header {
+  background-color: var(--bgcolor);
+  color: var(--textcolor);
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--bgwhite);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2rem 0.5rem;
+  min-width: 40%;
+  /* width: fit-content; */
+  margin: 0 auto;
+  border-radius: 0 0 10rem 10rem;
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+
+.location {
+  cursor: pointer;
+}
+
+.place {
+  /* font-size: 1.15rem; */
+  display: flex;
+  gap: 1rem;
+}
+
+/* .bottomNav {
+} */
+
+.logo {
+  font-size: 2rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 60%;
+}
+
+.navLinks li {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.userLocation {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.loginBtn {
+  background-color: var(--primaryText);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cartbox {
+  position: relative;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.totalItems {
+  position: absolute;
+  z-index: 3;
+  right: -0.6rem;
+  top: -0.5rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  background-color: var(--goldColor);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.cartIcon,
+.wishlist,
+.notification {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.wishlistContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMenu {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 676px) {
+  .navLinks,
+  .userLocation,
+  .loginBtn {
+    display: none;
+  }
+
+  .nav {
+    width: 98%;
+  }
+}
+
+@media (min-width: 800px) {
+  .mobileMenu {
+    display: none;
+  }
+}

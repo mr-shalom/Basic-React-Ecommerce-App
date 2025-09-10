@@ -1,0 +1,169 @@
+/* 
+
+:root {
+  --primaryText: #1a1a1a;
+  --heroText: #f4f4f4;
+  --goldColor: #f68b1e;
+  --bgwhite: #fff;
+  --whiteText:#fff;
+  --bgcolor: #f1f1f2;
+  --textcolor: #313133;
+  --productsBg:#fe9900;
+}
+
+*/
+
+.main {
+  max-width: 150rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--productsBg);
+  padding-bottom: 3rem;
+}
+
+.heroContainer {
+  min-height: 35vh;
+  padding: 10rem 0 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigateAside,
+.callAside {
+  flex-basis: 20rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.navigateAside {
+  background-color: var(--bgwhite);
+}
+
+.productNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  min-height: fit-content;
+  gap: 1rem;
+}
+
+.productNav li a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.productNav li a:hover {
+  color: var(--goldColor);
+  margin-left: 0.3rem;
+}
+
+.NavIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navDescription {
+  font-size: 1.1rem;
+}
+
+.swapMainPhoto {
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: url("/homepageSlider.jpg") no-repeat center center/cover;
+  background-size: 100% 100%;
+}
+
+.callAside {
+  background-color: var(--bgwhite);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: max-content;
+  display: none;
+}
+
+.callAside li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phoneIcon,
+.houseIcon,
+.busIcon {
+  border: 0.1rem solid var(--goldColor);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone,
+.house,
+.bus {
+  color: var(--goldColor);
+}
+
+.callText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.callText h2 {
+  font-size: 1.4rem;
+}
+
+.numberToCall {
+  font-size: 0.9rem;
+}
+
+.sell,
+.package {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.sort {
+  background-color: #fff;
+  padding: 1rem 0;
+  z-index: 20;
+}
+
+.sortQueries {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media (max-width: 767px) {
+  .heroContainer {
+    display: flex;
+    gap: 1rem;
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .sortQueries {
+    width: 96%;
+  }
+
+  .navigateAside,
+  .callAside {
+    display: none;
+  }
+}

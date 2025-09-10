@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primaryText: #1a1a1a;
+  --heroText: #f4f4f4;
+  --goldColor: #f68b1e;
+  --bgwhite: #fff;
+  --bgcolor: #f1f1f2;
+  --textcolor: #313133;
+  --grayfooter: #535357;
+  --productsBg: #fe9900;
+  --badgeBg: #fef3e9;
+  --badgeColor: #fab850;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Roboto", "Nunito", sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+body {
+  overflow: hidden auto;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--primaryText);
+}

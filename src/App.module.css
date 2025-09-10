@@ -1,0 +1,8 @@
+.layout {
+  display: flex;
+  /* flex-direction: column; */
+  position: relative;
+  min-height: 100vh;
+
+  background-color: red;
+}
